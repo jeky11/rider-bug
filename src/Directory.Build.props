@@ -1,0 +1,34 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <AnalysisMode>Default</AnalysisMode>
+        <LangVersion>latest</LangVersion>
+        <Platforms>x64</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsAsErrors/>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AsyncFixer" Version="1.5.1">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="ErrorProne.NET.CoreAnalyzers" Version="0.4.0-beta.1">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Lindhart.Analyser.MissingAwaitWarning" Version="2.0.0">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="ReflectionAnalyzers" Version="0.3.1">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="SerilogAnalyzer" Version="0.15.0">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>

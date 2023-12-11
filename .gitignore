@@ -1,52 +1,61 @@
-# Prerequisites
-*.d
+#ignore thumbnails created by windows
+Thumbs.db
 
-# Object files
-*.o
-*.ko
+#Ignore files build by Visual Studio
+*.orig
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
+*.user
+*.aps
 *.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dbmdl
+*.jfm
+[Bb]in
+[Cc]sx
+[Dd]ebug/
+*.sbr
+obj/
+#[Rr]elease*/
+_ReSharper*/
+_TeamCity*/
+[Tt]est[Rr]esult*
+*.ReSharper
+.vs/
+.vscode/
+.idea/
+*.docstates
+_rltm*
+*.GhostDoc.xml
+.fseventsd
+.DS_Store
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+#Ignore common build files
+build/*
+log
+deployment
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+#Visual studio profiling
+*.vsp
+*.psess
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+#ignore various stats
+*.tsv
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+*.sh -lf
+distrib
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+src/.nuget/NuGet.Config
+src/NuGet.Config
+
+#ignore data from docker
+docker/*/data/
